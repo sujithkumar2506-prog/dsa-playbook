@@ -16,6 +16,7 @@ move left to first possible insetion
 Searching for insertion is not like searching a target value,
 It searches for a property, that looks for first possible insertion point.
 
+-- code
 
 int searchInsertion(int nums, int target){
   int left, right, mid;
