@@ -17,7 +17,7 @@ Searching for insertion is not like searching a target value,
 It searches for a property, that looks for first possible insertion point.
 
 # Code
-'''cpp
+```cpp
 int searchInsertion(int nums, int target){
   int left, right, mid;
   left = 0;
@@ -26,11 +26,11 @@ int searchInsertion(int nums, int target){
     mid = left+(right-left)/2;
     if(nums[mid]==target) return mid;
     else if(nums[mid]<target) left = mid+1;
-    else right = mid+1;
+    else right = mid-1;
     }
   return l+1;      
     }
-'''
+```
 
 # Time Complexity : O(logn) // log base 2
 # Space Complexity: O(1)
