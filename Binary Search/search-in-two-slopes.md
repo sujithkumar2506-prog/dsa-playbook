@@ -14,8 +14,9 @@ Search in rotated sorted array
  There is atleast one sorted array between either left-to-mid or mid-to-right
  check target exist in sorted array and discard if not and move your range to other half.
 
- -- Code
- class Solution {
+# Code
+```java
+class Solution {
     public int search(int[] nums, int target) {
         int left,right, mid;
         boolean found = false;
@@ -48,6 +49,7 @@ Search in rotated sorted array
 
     }
 }
+```
 
 # Time Complexity : O(logn) 
 
