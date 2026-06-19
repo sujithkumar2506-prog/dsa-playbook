@@ -27,7 +27,7 @@ when there is one element in an array, avoid mid<mid+1 index out of bound except
 
 # Code section
 
--- Java
+```Java
 class Solution {
     public int findPeakElement(int[] nums) {
      int left,right,mid,ans;
@@ -50,9 +50,9 @@ class Solution {
      return left; 
     }
 }
+```
 
-
--- Python
+```python
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
         left, right = 0, len(nums) - 1
@@ -64,7 +64,7 @@ class Solution:
                 left = mid + 1
         return left
 
-
+```
 # Time Complexity : O(logn) // log base 2
 
 # Space Complexity : O(1) // constant space
