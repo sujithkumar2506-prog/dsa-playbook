@@ -21,7 +21,8 @@ if not less, shrink the search space to right half.
 this pattern reminds me of first occurence, meaning in a monotonic increasing search space, if one element is valid, all element to its right are valid, so we continue to search for the minimum in left half.
 
 # Code
-'''python
+```python
+from math import ceil
 class Solution:
     # Helper function to return total hours taken at k rate
     def totalHours(self,piles,k):
