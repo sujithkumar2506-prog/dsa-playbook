@@ -15,6 +15,7 @@ Search in rotated sorted array
  check target exist in sorted array and discard if not and move your range to other half.
 
 # Code
+## Java
 ```java
 class Solution {
     public int search(int[] nums, int target) {
