@@ -23,10 +23,10 @@ if nums[mid] > nums[mid+1] then there must be peak element from left to mid. not
 unlike typical binary search problem does right = mid-1. We are not sure mid-1 contains ele greater than mid.
 left<right instead of left <=right handles cases 
 when there is one element in an array, avoid mid<mid+1 index out of bound exception
- ## key var used is left , move left to close to the slope possible and return left.
+ ### key var used is left , move left to close to the slope possible and return left.
 
 # Code section
-
+## Java
 ```Java
 class Solution {
     public int findPeakElement(int[] nums) {
@@ -51,7 +51,7 @@ class Solution {
     }
 }
 ```
-
+## Python
 ```python
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
