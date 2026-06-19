@@ -12,6 +12,8 @@ Whenever nums[left]<target,
 values on the left of mid, can never have target,
 so Discard that half.
 
+# Code
+'''c
 int findindex(int &nums,int target){
   int left, right, mid;
   left = 0;
@@ -24,6 +26,6 @@ int findindex(int &nums,int target){
   }
   return -1;  // -1 indicates that the target element is not found in array.
 }
-
+'''
 Time Complexity : O(logn)  // log base 2 to the n.
 Space Complexity : O(1)
